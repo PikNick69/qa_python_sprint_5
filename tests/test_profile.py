@@ -12,7 +12,7 @@ class TestProfile:
         driver.find_element(*LoginPageLocators.LOGIN_BUTTON).click()
 
         WebDriverWait(driver, 5).until(
-            expected_conditions.visibility_of_element_located(MainPageLocators.PERSONAL_ACCOUNT_BUTTON)
+            expected_conditions.visibility_of_element_located(MainPageLocators.PLACE_ORDER_BUTTON)
         )
         driver.find_element(*MainPageLocators.PERSONAL_ACCOUNT_BUTTON).click()
 
@@ -50,7 +50,7 @@ class TestProfile:
         driver.find_element(*LoginPageLocators.LOGIN_BUTTON).click()
 
         WebDriverWait(driver, 5).until(
-            expected_conditions.visibility_of_element_located(MainPageLocators.PERSONAL_ACCOUNT_BUTTON)
+            expected_conditions.visibility_of_element_located(MainPageLocators.PLACE_ORDER_BUTTON)
         )
         driver.find_element(*MainPageLocators.PERSONAL_ACCOUNT_BUTTON).click()
 
@@ -72,7 +72,7 @@ class TestProfile:
         driver.find_element(*LoginPageLocators.LOGIN_BUTTON).click()
 
         WebDriverWait(driver, 5).until(
-            expected_conditions.visibility_of_element_located(MainPageLocators.PERSONAL_ACCOUNT_BUTTON)
+            expected_conditions.visibility_of_element_located(MainPageLocators.PLACE_ORDER_BUTTON)
         )
         driver.find_element(*MainPageLocators.PERSONAL_ACCOUNT_BUTTON).click()
 

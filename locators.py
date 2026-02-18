@@ -11,6 +11,7 @@ class MainPageLocators:
     FILLINGS_HEADER = (By.XPATH, ".//h2[text()='Начинки']") # Заголовок "Начинки"
     CONSTRUCTOR_BUTTON = (By.XPATH, ".//a[@href='/']") # Ссылка "Конструктор"
     LOGO = (By.XPATH, ".//a[@href='/' and contains(@class, 'logo')]") # Логотип Stellar Burgers
+    PLACE_ORDER_BUTTON = (By.XPATH, ".//button[text()='Оформить заказ']") #Кнопка оформления заказа(после логина)
 
 class LoginPageLocators:
     EMAIL_INPUT = (By.XPATH, ".//input[@name='name']") # Поле Email на странице входа
@@ -33,3 +34,5 @@ class ForgotPasswordPageLocators:
 class ProfilePageLocators:
     LOGOUT_BUTTON = (By.XPATH, ".//button[text()='Выход']") # Кнопка выхода
     PROFILE_HEADER = (By.XPATH, ".//a[text()='Профиль']") # Заголовок профиля при авторизованном пользователе
+    CONSTRUCTOR_BUTTON = (By.XPATH, ".//a[@href='/']")
+    LOGO = (By.XPATH, ".//a[@href='/']")

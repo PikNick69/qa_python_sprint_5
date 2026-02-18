@@ -17,9 +17,10 @@ class TestLogin:
         driver.find_element(*LoginPageLocators.LOGIN_BUTTON).click()
 
         WebDriverWait(driver, 5).until(
-            expected_conditions.visibility_of_element_located(MainPageLocators.PERSONAL_ACCOUNT_BUTTON)
+            expected_conditions.visibility_of_element_located(MainPageLocators.PLACE_ORDER_BUTTON)
         )
         assert driver.current_url == "https://stellarburgers.education-services.ru/"
+
     def test_login_via_personal_account_button(self, driver, registered_user_via_ui):
         user = registered_user_via_ui
         driver.get("https://stellarburgers.education-services.ru/")
@@ -33,7 +34,7 @@ class TestLogin:
         driver.find_element(*LoginPageLocators.LOGIN_BUTTON).click()
 
         WebDriverWait(driver, 5).until(
-            expected_conditions.visibility_of_element_located(MainPageLocators.PERSONAL_ACCOUNT_BUTTON)
+            expected_conditions.visibility_of_element_located(MainPageLocators.PLACE_ORDER_BUTTON)
         )
         assert driver.current_url == "https://stellarburgers.education-services.ru/"
 
@@ -50,7 +51,7 @@ class TestLogin:
         driver.find_element(*LoginPageLocators.LOGIN_BUTTON).click()
 
         WebDriverWait(driver, 5).until(
-            expected_conditions.visibility_of_element_located(MainPageLocators.PERSONAL_ACCOUNT_BUTTON)
+            expected_conditions.visibility_of_element_located(MainPageLocators.PLACE_ORDER_BUTTON)
         )
         assert driver.current_url == "https://stellarburgers.education-services.ru/"
 
@@ -67,7 +68,7 @@ class TestLogin:
         driver.find_element(*LoginPageLocators.LOGIN_BUTTON).click()
 
         WebDriverWait(driver, 5).until(
-            expected_conditions.visibility_of_element_located(MainPageLocators.PERSONAL_ACCOUNT_BUTTON)
+            expected_conditions.visibility_of_element_located(MainPageLocators.PLACE_ORDER_BUTTON)
         )
         assert driver.current_url == "https://stellarburgers.education-services.ru/"
 
